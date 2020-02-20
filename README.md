@@ -89,5 +89,5 @@ started.
 ### Join the SAM Community on Slack
 [Join the SAM developers channel (#samdev)](https://join.slack.com/t/awsdevelopers/shared_invite/enQtMzg3NTc5OTM2MzcxLTIxNjc0ZTJkNmYyNWY3OWE4NTFiNzU1ZTM2Y2VkNmFlNjQ2YjI3YTE1ZDA5YjE5NDE2MjVmYWFlYWIxNjE2NjU) on Slack to collaborate with fellow community members and the AWS SAM team.
 
-Test commit2
+Testing sam jenkins Trigger
 
