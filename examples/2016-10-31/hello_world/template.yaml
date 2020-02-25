@@ -6,6 +6,6 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: '{{resolve:ssm:EnvLifecycle:5}}'
+      Handler: '{{resolve:ssm:EnvLifecycle:6}}'
       Runtime: nodejs12.x
       CodeUri: src/
