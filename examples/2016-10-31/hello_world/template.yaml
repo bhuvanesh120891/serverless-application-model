@@ -11,9 +11,6 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: index.handler
+      Handler: !Ref Lifecycle
       Runtime: nodejs12.x
       CodeUri: src/
-      Environment: 
-        Variables:
-          DB_USER: !Ref Lifecycle
