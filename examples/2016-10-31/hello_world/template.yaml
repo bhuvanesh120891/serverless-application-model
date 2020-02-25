@@ -2,6 +2,11 @@ AWSTemplateFormatVersion : '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: A hello world application.
 
+Parameters:
+  Lifecycle:
+    Description: 'Prod or non-prod'
+    Type: 'AWS::SSM::Parameter::Value<String>'
+    Default: 'EnvLifecycle'
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
@@ -9,3 +14,6 @@ Resources:
       Handler: index.handler
       Runtime: nodejs12.x
       CodeUri: src/
+      Environment: 
+        Variables:
+          DB_USER: !Ref Lifecycle
