@@ -4,13 +4,12 @@ Description: A hello world application.
 
 Parameters:
     Handlername:
-        Description: 'code to be called'
         Type: String
-        Default: 'index.handler'
+
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: !Ref Handlername
+      Handler: !Sub "${Handlername}"
       Runtime: nodejs12.x
       CodeUri: src/
